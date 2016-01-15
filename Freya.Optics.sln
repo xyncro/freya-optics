@@ -25,6 +25,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3C02A0B3-F6BA-44BE-80C2-FF5555B2CADD}"
 	ProjectSection(SolutionItems) = preProject
 		src\Freya.Optics\Freya.Optics.fsproj.paket.references = src\Freya.Optics\Freya.Optics.fsproj.paket.references
+		src\Freya.Optics.Http.Cors\Freya.Optics.Http.Cors.fsproj.paket.references = src\Freya.Optics.Http.Cors\Freya.Optics.Http.Cors.fsproj.paket.references
+		src\Freya.Optics.Http\Freya.Optics.Http.fsproj.paket.references = src\Freya.Optics.Http\Freya.Optics.Http.fsproj.paket.references
 	EndProjectSection
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Optics.Tests", "tests\Freya.Optics.Tests\Freya.Optics.Tests.fsproj", "{1F24FD9E-AC24-4D27-BDF6-161ADD14B82E}"
@@ -33,6 +35,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F5E6CAFB
 	ProjectSection(SolutionItems) = preProject
 		tests\Freya.Optics.Tests\Freya.Optics.Tests.fsproj.paket.references = tests\Freya.Optics.Tests\Freya.Optics.Tests.fsproj.paket.references
 	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Optics.Http", "src\Freya.Optics.Http\Freya.Optics.Http.fsproj", "{63A4881E-8B31-48DE-BDAC-92164F6FE100}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Optics.Http.Cors", "src\Freya.Optics.Http.Cors\Freya.Optics.Http.Cors.fsproj", "{E2A3FE72-5816-4F85-AA02-E5DD8248E0EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +54,14 @@ Global
 		{1F24FD9E-AC24-4D27-BDF6-161ADD14B82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F24FD9E-AC24-4D27-BDF6-161ADD14B82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F24FD9E-AC24-4D27-BDF6-161ADD14B82E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63A4881E-8B31-48DE-BDAC-92164F6FE100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63A4881E-8B31-48DE-BDAC-92164F6FE100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63A4881E-8B31-48DE-BDAC-92164F6FE100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63A4881E-8B31-48DE-BDAC-92164F6FE100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2A3FE72-5816-4F85-AA02-E5DD8248E0EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2A3FE72-5816-4F85-AA02-E5DD8248E0EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2A3FE72-5816-4F85-AA02-E5DD8248E0EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2A3FE72-5816-4F85-AA02-E5DD8248E0EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,5 +73,7 @@ Global
 		{3C02A0B3-F6BA-44BE-80C2-FF5555B2CADD} = {E9B3EE76-03AA-432E-ABEA-D271379E5BD8}
 		{1F24FD9E-AC24-4D27-BDF6-161ADD14B82E} = {593866F0-5868-42BA-A4EE-B3DF75EE07DF}
 		{F5E6CAFB-122E-48C0-93FF-1DF44429F9A3} = {E9B3EE76-03AA-432E-ABEA-D271379E5BD8}
+		{63A4881E-8B31-48DE-BDAC-92164F6FE100} = {7347A7BE-4E32-4F02-9688-7609E965F6C8}
+		{E2A3FE72-5816-4F85-AA02-E5DD8248E0EC} = {7347A7BE-4E32-4F02-9688-7609E965F6C8}
 	EndGlobalSection
 EndGlobal

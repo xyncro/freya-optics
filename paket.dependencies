@@ -1,6 +1,11 @@
 source http://nuget.org/api/v2
+source http://www.myget.org/F/freya/api/v2
 
-nuget Aether ~> 8
+nuget Aether         >= 8.1.0 < 9.0.0
+nuget Arachne.Http      3.0.0-b083
+nuget Arachne.Http.Cors 3.0.0-b083
+nuget Arachne.Uri       3.0.0-b083
+nuget Freya.Core        4.0.0-alpha002
 
 group Build
 

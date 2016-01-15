@@ -40,6 +40,15 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Optics.Http", "src\Fr
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Optics.Http.Cors", "src\Freya.Optics.Http.Cors\Freya.Optics.Http.Cors.fsproj", "{E2A3FE72-5816-4F85-AA02-E5DD8248E0EC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{A1B0E43D-0D8A-45F5-B4F3-473DFCC9A3AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8FA27E0A-8A5D-47E5-89D6-EDCB43E003BA}"
+	ProjectSection(SolutionItems) = preProject
+		src\Freya.Optics\Freya.Optics.fsproj.paket.template = src\Freya.Optics\Freya.Optics.fsproj.paket.template
+		src\Freya.Optics.Http.Cors\Freya.Optics.Http.Cors.fsproj.paket.template = src\Freya.Optics.Http.Cors\Freya.Optics.Http.Cors.fsproj.paket.template
+		src\Freya.Optics.Http\Freya.Optics.Http.fsproj.paket.template = src\Freya.Optics.Http\Freya.Optics.Http.fsproj.paket.template
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,5 +84,7 @@ Global
 		{F5E6CAFB-122E-48C0-93FF-1DF44429F9A3} = {E9B3EE76-03AA-432E-ABEA-D271379E5BD8}
 		{63A4881E-8B31-48DE-BDAC-92164F6FE100} = {7347A7BE-4E32-4F02-9688-7609E965F6C8}
 		{E2A3FE72-5816-4F85-AA02-E5DD8248E0EC} = {7347A7BE-4E32-4F02-9688-7609E965F6C8}
+		{A1B0E43D-0D8A-45F5-B4F3-473DFCC9A3AD} = {B7BBA8FF-6884-4C14-932A-6A999752DF5B}
+		{8FA27E0A-8A5D-47E5-89D6-EDCB43E003BA} = {A1B0E43D-0D8A-45F5-B4F3-473DFCC9A3AD}
 	EndGlobalSection
 EndGlobal

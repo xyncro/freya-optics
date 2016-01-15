@@ -1,0 +1,23 @@
+﻿type project
+id
+    Freya.Optics.Http
+title
+    Freya.Optics.Http
+description
+    Freya Optics for access to core HTTP properties of requests and responses
+tags
+    functional, web, f#, http, optics, aether, freya
+version
+    4.0.0-alpha001
+owners
+    Andrew Cherry, Ryan Riley
+authors
+    Andrew Cherry, Ryan Riley
+copyright
+    Copyright Xyncro Ltd 2016
+projectUrl
+    https://xyncro.tech/freya
+licenseUrl
+    https://github.com/xyncro/freya-optics/blob/master/LICENSE.md
+requireLicenseAcceptance
+    false

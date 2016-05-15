@@ -24,7 +24,7 @@ NUGET
     FParsec (1.0.2)
   remote: http://www.myget.org/F/freya/api/v2
   specs:
-    Freya.Core (4.0.0-b008)
+    Freya.Core (4.0.0-b009)
       Aether (>= 8.1 < 9.0)
 
 GROUP Build

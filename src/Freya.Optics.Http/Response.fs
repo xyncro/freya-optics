@@ -13,11 +13,11 @@ open Freya.Optics
 module Response =
 
     let body_ =
-            Freya.State.value_<Stream> Constants.ResponseBody
+            State.value_<Stream> Constants.ResponseBody
         >-> Option.unsafe_
 
     let headers_ =
-            Freya.State.value_<IDictionary<string, string []>> Constants.ResponseHeaders
+            State.value_<IDictionary<string, string []>> Constants.ResponseHeaders
         >-> Option.unsafe_
 
     let header_ key =
@@ -26,14 +26,14 @@ module Response =
         >-> Option.mapIsomorphism ((String.concat ","), (Array.create 1))
 
     let httpVersion_ =
-            Freya.State.value_<string> Constants.ResponseProtocol
+            State.value_<string> Constants.ResponseProtocol
         >-> Option.mapIsomorphism (HttpVersion.parse, HttpVersion.format)
 
     let reasonPhrase_ =
-            Freya.State.value_<string> Constants.ResponseReasonPhrase
+            State.value_<string> Constants.ResponseReasonPhrase
 
     let statusCode_ =
-            Freya.State.value_<int> Constants.ResponseStatusCode
+            State.value_<int> Constants.ResponseStatusCode
 
     (* Headers *)
 

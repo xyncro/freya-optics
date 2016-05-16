@@ -14,11 +14,11 @@ open Freya.Optics
 module Request =
 
     let body_ =
-            Freya.State.value_<Stream> Constants.RequestBody
+            State.value_<Stream> Constants.RequestBody
         >-> Option.unsafe_
 
     let headers_ =
-            Freya.State.value_<IDictionary<string,string []>> Constants.RequestHeaders
+            State.value_<IDictionary<string,string []>> Constants.RequestHeaders
         >-> Option.unsafe_
 
     let header_ key =
@@ -27,30 +27,30 @@ module Request =
         >-> Option.mapIsomorphism ((String.concat ","), (Array.create 1))
 
     let method_ = 
-            Freya.State.value_<string> Constants.RequestMethod
+            State.value_<string> Constants.RequestMethod
         >-> Option.unsafe_
         >-> (Method.parse, Method.format)
 
     let path_ =
-            Freya.State.value_<string> Constants.RequestPath
+            State.value_<string> Constants.RequestPath
         >-> Option.unsafe_
 
     let pathBase_ =
-            Freya.State.value_<string> Constants.RequestPathBase
+            State.value_<string> Constants.RequestPathBase
         >-> Option.unsafe_
 
     let httpVersion_ =
-            Freya.State.value_<string> Constants.RequestProtocol
+            State.value_<string> Constants.RequestProtocol
         >-> Option.unsafe_
         >-> (HttpVersion.parse, HttpVersion.format)
 
     let scheme_ =
-            Freya.State.value_<string> Constants.RequestScheme
+            State.value_<string> Constants.RequestScheme
         >-> Option.unsafe_
         >-> (Scheme.parse, Scheme.format)
 
     let query_ =
-            Freya.State.value_<string> Constants.RequestQueryString
+            State.value_<string> Constants.RequestQueryString
         >-> Option.unsafe_
         >-> (Query.parse, Query.format)
 

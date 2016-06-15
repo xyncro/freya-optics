@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7347A7BE-4E32-4F02-9688-7609E965F6C8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{593866F0-5868-42BA-A4EE-B3DF75EE07DF}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sln", "sln", "{B7BBA8FF-6884-4C14-932A-6A999752DF5B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{6DD2880E-CB63-45CE-9642-E5958CF81331}"
@@ -27,13 +25,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3C02A0B3-F6B
 		src\Freya.Optics\Freya.Optics.fsproj.paket.references = src\Freya.Optics\Freya.Optics.fsproj.paket.references
 		src\Freya.Optics.Http.Cors\Freya.Optics.Http.Cors.fsproj.paket.references = src\Freya.Optics.Http.Cors\Freya.Optics.Http.Cors.fsproj.paket.references
 		src\Freya.Optics.Http\Freya.Optics.Http.fsproj.paket.references = src\Freya.Optics.Http\Freya.Optics.Http.fsproj.paket.references
-	EndProjectSection
-EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Optics.Tests", "tests\Freya.Optics.Tests\Freya.Optics.Tests.fsproj", "{1F24FD9E-AC24-4D27-BDF6-161ADD14B82E}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F5E6CAFB-122E-48C0-93FF-1DF44429F9A3}"
-	ProjectSection(SolutionItems) = preProject
-		tests\Freya.Optics.Tests\Freya.Optics.Tests.fsproj.paket.references = tests\Freya.Optics.Tests\Freya.Optics.Tests.fsproj.paket.references
 	EndProjectSection
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Optics.Http", "src\Freya.Optics.Http\Freya.Optics.Http.fsproj", "{63A4881E-8B31-48DE-BDAC-92164F6FE100}"
@@ -59,10 +50,6 @@ Global
 		{E4BBF3D3-A03A-4111-A4C1-DD6837ED4F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4BBF3D3-A03A-4111-A4C1-DD6837ED4F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4BBF3D3-A03A-4111-A4C1-DD6837ED4F47}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1F24FD9E-AC24-4D27-BDF6-161ADD14B82E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1F24FD9E-AC24-4D27-BDF6-161ADD14B82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1F24FD9E-AC24-4D27-BDF6-161ADD14B82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1F24FD9E-AC24-4D27-BDF6-161ADD14B82E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{63A4881E-8B31-48DE-BDAC-92164F6FE100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{63A4881E-8B31-48DE-BDAC-92164F6FE100}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63A4881E-8B31-48DE-BDAC-92164F6FE100}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -80,8 +67,6 @@ Global
 		{E9B3EE76-03AA-432E-ABEA-D271379E5BD8} = {B7BBA8FF-6884-4C14-932A-6A999752DF5B}
 		{E4BBF3D3-A03A-4111-A4C1-DD6837ED4F47} = {7347A7BE-4E32-4F02-9688-7609E965F6C8}
 		{3C02A0B3-F6BA-44BE-80C2-FF5555B2CADD} = {E9B3EE76-03AA-432E-ABEA-D271379E5BD8}
-		{1F24FD9E-AC24-4D27-BDF6-161ADD14B82E} = {593866F0-5868-42BA-A4EE-B3DF75EE07DF}
-		{F5E6CAFB-122E-48C0-93FF-1DF44429F9A3} = {E9B3EE76-03AA-432E-ABEA-D271379E5BD8}
 		{63A4881E-8B31-48DE-BDAC-92164F6FE100} = {7347A7BE-4E32-4F02-9688-7609E965F6C8}
 		{E2A3FE72-5816-4F85-AA02-E5DD8248E0EC} = {7347A7BE-4E32-4F02-9688-7609E965F6C8}
 		{A1B0E43D-0D8A-45F5-B4F3-473DFCC9A3AD} = {B7BBA8FF-6884-4C14-932A-6A999752DF5B}

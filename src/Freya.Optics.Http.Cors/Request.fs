@@ -1,10 +1,10 @@
 ﻿namespace Freya.Optics.Http.Cors
 
 open Aether.Operators
-open Arachne.Http.Cors
 open Freya.Core
 open Freya.Optics
 open Freya.Optics.Http
+open Freya.Types.Http.Cors
 
 (* Request *)
 

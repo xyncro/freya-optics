@@ -1,11 +1,11 @@
 source http://nuget.org/api/v2
 source http://www.myget.org/F/freya/api/v2
 
-nuget Aether            ~> 8.1
-nuget Arachne.Http      ~> 3.0.0-b
-nuget Arachne.Http.Cors ~> 3.0.0-b
-nuget Arachne.Uri       ~> 3.0.0-b
-nuget Freya.Core        ~> 4.0.0-b
+nuget Aether                ~> 8.1
+nuget Freya.Core            ~> 4.0.0-b
+nuget Freya.Types.Http      ~> 4.0.0-b
+nuget Freya.Types.Http.Cors ~> 4.0.0-b
+nuget Freya.Types.Uri       ~> 4.0.0-b
 
 group Build
 
@@ -18,7 +18,9 @@ group Test
 
   framework: >= net45
   source http://nuget.org/api/v2
+  source http://www.myget.org/F/freya/api/v2
 
+  nuget Freya.Testing ~> 4.0.0-b
   nuget Unquote
   nuget xunit
   nuget xunit.runner.console

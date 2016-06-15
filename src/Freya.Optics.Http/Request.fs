@@ -3,10 +3,10 @@
 open System.Collections.Generic
 open System.IO
 open Aether.Operators
-open Arachne.Http
-open Arachne.Uri
 open Freya.Core
 open Freya.Optics
+open Freya.Types.Http
+open Freya.Types.Uri
 
 (* Request *)
 

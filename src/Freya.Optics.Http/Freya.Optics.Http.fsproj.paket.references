@@ -1,4 +1,4 @@
 ﻿Aether
-Arachne.Http
-Arachne.Uri
 Freya.Core
+Freya.Types.Http
+Freya.Types.Uri

@@ -3,9 +3,9 @@
 open System.Collections.Generic
 open System.IO
 open Aether.Operators
-open Arachne.Http
 open Freya.Core
 open Freya.Optics
+open Freya.Types.Http
 
 (* Response *)
 

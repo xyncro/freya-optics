@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Request.fs" />
     <Compile Include="Response.fs" />
+    <Compile Include="Obsolete.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Freya.Optics.Http\Freya.Optics.Http.fsproj">

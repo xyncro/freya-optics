@@ -3,7 +3,7 @@ NUGET
     Aether (8.1.2)
     FParsec (1.0.2)
   remote: http://www.myget.org/F/freya/api/v2
-    Freya.Core (4.0.0-b011)
+    Freya.Core (4.0.0-b012)
       Aether (>= 8.1 < 9.0)
     Freya.Types (4.0.0-b001)
       FParsec (>= 1.0 < 2.0)
@@ -52,7 +52,7 @@ NUGET
       xunit.extensibility.core (2.1)
     xunit.runner.console (2.1)
   remote: http://www.myget.org/F/freya/api/v2
-    Freya.Core (4.0.0-b011)
+    Freya.Core (4.0.0-b012)
       Aether (>= 8.1 < 9.0)
     Freya.Testing (4.0.0-b008)
       Aether (>= 8.1 < 9.0)

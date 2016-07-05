@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7347A7BE-4E32-4F02-9688-7609E965F6C8}"
 EndProject
@@ -25,6 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3C02A0B3-F6B
 		src\Freya.Optics\Freya.Optics.fsproj.paket.references = src\Freya.Optics\Freya.Optics.fsproj.paket.references
 		src\Freya.Optics.Http.Cors\Freya.Optics.Http.Cors.fsproj.paket.references = src\Freya.Optics.Http.Cors\Freya.Optics.Http.Cors.fsproj.paket.references
 		src\Freya.Optics.Http\Freya.Optics.Http.fsproj.paket.references = src\Freya.Optics.Http\Freya.Optics.Http.fsproj.paket.references
+		src\Freya.Optics.Http.Patch\Freya.Optics.Http.Patch.fsproj.paket.references = src\Freya.Optics.Http.Patch\Freya.Optics.Http.Patch.fsproj.paket.references
 	EndProjectSection
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Optics.Http", "src\Freya.Optics.Http\Freya.Optics.Http.fsproj", "{63A4881E-8B31-48DE-BDAC-92164F6FE100}"
@@ -38,7 +39,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8FA27E0A-8A5
 		src\Freya.Optics\Freya.Optics.fsproj.paket.template = src\Freya.Optics\Freya.Optics.fsproj.paket.template
 		src\Freya.Optics.Http.Cors\Freya.Optics.Http.Cors.fsproj.paket.template = src\Freya.Optics.Http.Cors\Freya.Optics.Http.Cors.fsproj.paket.template
 		src\Freya.Optics.Http\Freya.Optics.Http.fsproj.paket.template = src\Freya.Optics.Http\Freya.Optics.Http.fsproj.paket.template
+		src\Freya.Optics.Http.Patch\Freya.Optics.Http.Patch.fsproj.paket.template = src\Freya.Optics.Http.Patch\Freya.Optics.Http.Patch.fsproj.paket.template
 	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Optics.Http.Patch", "src\Freya.Optics.Http.Patch\Freya.Optics.Http.Patch.fsproj", "{F7E37409-78A3-413E-91C4-31D3678C9B5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +62,10 @@ Global
 		{E2A3FE72-5816-4F85-AA02-E5DD8248E0EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2A3FE72-5816-4F85-AA02-E5DD8248E0EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2A3FE72-5816-4F85-AA02-E5DD8248E0EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7E37409-78A3-413E-91C4-31D3678C9B5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7E37409-78A3-413E-91C4-31D3678C9B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7E37409-78A3-413E-91C4-31D3678C9B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7E37409-78A3-413E-91C4-31D3678C9B5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,5 +79,6 @@ Global
 		{E2A3FE72-5816-4F85-AA02-E5DD8248E0EC} = {7347A7BE-4E32-4F02-9688-7609E965F6C8}
 		{A1B0E43D-0D8A-45F5-B4F3-473DFCC9A3AD} = {B7BBA8FF-6884-4C14-932A-6A999752DF5B}
 		{8FA27E0A-8A5D-47E5-89D6-EDCB43E003BA} = {A1B0E43D-0D8A-45F5-B4F3-473DFCC9A3AD}
+		{F7E37409-78A3-413E-91C4-31D3678C9B5E} = {7347A7BE-4E32-4F02-9688-7609E965F6C8}
 	EndGlobalSection
 EndGlobal

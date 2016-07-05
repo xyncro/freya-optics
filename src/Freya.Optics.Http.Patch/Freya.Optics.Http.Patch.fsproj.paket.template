@@ -1,0 +1,23 @@
+﻿type project
+id
+    Freya.Optics.Http.Patch
+title
+    Freya.Optics.Http.Patch
+description
+    Freya Optics for access to Patch extension properties of requests and responses
+tags
+    functional, web, f#, http, patch, optics, aether, freya
+version
+    3.0.0-b301
+owners
+    Andrew Cherry, Ryan Riley
+authors
+    Andrew Cherry, Ryan Riley
+copyright
+    Copyright Xyncro Ltd 2016
+projectUrl
+    https://xyncro.tech/freya
+licenseUrl
+    https://github.com/xyncro/freya-optics/blob/master/LICENSE.md
+requireLicenseAcceptance
+    false

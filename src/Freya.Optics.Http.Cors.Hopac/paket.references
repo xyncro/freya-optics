@@ -1,0 +1,8 @@
+﻿group Common
+
+  Aether
+  Freya.Types.Http.Cors
+
+group Hopac
+
+  Freya.Core.Hopac

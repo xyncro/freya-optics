@@ -1,43 +1,64 @@
+
+
+GROUP Async
+NUGET
+  remote: http://www.nuget.org/api/v2
+    Aether (8.1.2)
+  remote: http://www.myget.org/F/freya/api/v2
+    Freya.Core (3.0.0-rc01)
+      Aether (>= 8.1 < 9.0)
+
+GROUP Build
+NUGET
+  remote: http://www.nuget.org/api/v2
+    FAKE (4.33.3)
+GITHUB
+  remote: xyncro/build
+    build.fsx (589ed49e68b51d7de9e9de9be1adc30e26ce534d)
+GROUP Common
 NUGET
   remote: http://www.nuget.org/api/v2
     Aether (8.1.2)
     FParsec (1.0.2)
   remote: http://www.myget.org/F/freya/api/v2
-    Freya.Core (3.0.0-b301)
-      Aether (>= 8.1 < 9.0)
-    Freya.Types (3.0.0-b301)
+    Freya.Types (3.0.0-rc01)
       FParsec (>= 1.0 < 2.0)
-    Freya.Types.Http (3.0.0-b301)
+    Freya.Types.Http (3.0.0-rc01)
       FParsec (>= 1.0 < 2.0)
-      Freya.Types (>= 3.0.0-b301)
-      Freya.Types.Language (>= 3.0.0-b301)
-      Freya.Types.Uri (>= 3.0.0-b301)
-    Freya.Types.Http.Cors (3.0.0-b301)
+      Freya.Types (>= 3.0.0-rc01)
+      Freya.Types.Language (>= 3.0.0-rc01)
+      Freya.Types.Uri (>= 3.0.0-rc01)
+    Freya.Types.Http.Cors (3.0.0-rc01)
       FParsec (>= 1.0 < 2.0)
-      Freya.Types (>= 3.0.0-b301)
-      Freya.Types.Http (>= 3.0.0-b301)
-      Freya.Types.Language (>= 3.0.0-b301)
-      Freya.Types.Uri (>= 3.0.0-b301)
-    Freya.Types.Http.Patch (3.0.0-b301)
+      Freya.Types (>= 3.0.0-rc01)
+      Freya.Types.Http (>= 3.0.0-rc01)
+      Freya.Types.Language (>= 3.0.0-rc01)
+      Freya.Types.Uri (>= 3.0.0-rc01)
+    Freya.Types.Http.Patch (3.0.0-rc01)
       FParsec (>= 1.0 < 2.0)
-      Freya.Types (>= 3.0.0-b301)
-      Freya.Types.Http (>= 3.0.0-b301)
-      Freya.Types.Language (>= 3.0.0-b301)
-      Freya.Types.Uri (>= 3.0.0-b301)
-    Freya.Types.Language (3.0.0-b301)
+      Freya.Types (>= 3.0.0-rc01)
+      Freya.Types.Http (>= 3.0.0-rc01)
+      Freya.Types.Language (>= 3.0.0-rc01)
+      Freya.Types.Uri (>= 3.0.0-rc01)
+    Freya.Types.Language (3.0.0-rc01)
       FParsec (>= 1.0 < 2.0)
-      Freya.Types (>= 3.0.0-b301)
-    Freya.Types.Uri (3.0.0-b301)
+      Freya.Types (>= 3.0.0-rc01)
+    Freya.Types.Uri (3.0.0-rc01)
       FParsec (>= 1.0 < 2.0)
-      Freya.Types (>= 3.0.0-b301)
+      Freya.Types (>= 3.0.0-rc01)
 
-GROUP Build
+GROUP Hopac
 NUGET
   remote: http://www.nuget.org/api/v2
-    FAKE (4.28)
-GITHUB
-  remote: xyncro/build
-    build.fsx (589ed49e68b51d7de9e9de9be1adc30e26ce534d)
+    Aether (8.1.2)
+    FSharp.Core (4.0.0.1)
+    Hopac (0.2.1)
+      FSharp.Core (>= 3.1.2.5)
+  remote: http://www.myget.org/F/freya/api/v2
+    Freya.Core.Hopac (3.0.0-rc01)
+      Aether (>= 8.1 < 9.0)
+      Hopac (>= 0.0 < 1.0)
+
 GROUP Test
 FRAMEWORK: >= NET45
 NUGET
@@ -58,9 +79,9 @@ NUGET
       xunit.extensibility.core (2.1)
     xunit.runner.console (2.1)
   remote: http://www.myget.org/F/freya/api/v2
-    Freya.Core (3.0.0-b301)
+    Freya.Core (3.0.0-rc01)
       Aether (>= 8.1 < 9.0)
-    Freya.Testing (3.0.0-b301)
+    Freya.Testing (3.0.0-rc01)
       Aether (>= 8.1 < 9.0)
-      Freya.Core (>= 3.0.0-b < 3.1.0-b)
+      Freya.Core (>= 3.0.0-rc < 3.1.0-rc)
       Unquote

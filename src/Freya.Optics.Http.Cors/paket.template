@@ -1,14 +1,14 @@
 ﻿type project
 id
-    Freya.Optics
+    Freya.Optics.Http.Cors
 title
-    Freya.Optics
+    Freya.Optics.Http.Cors
 description
-    The core utilities for Freya Optics
+    Freya Optics for access to CORS extension properties of requests and responses
 tags
-    functional, web, f#, http, optics, aether, freya
+    functional, web, f#, http, cors, optics, aether, freya
 version
-    3.0.0-b301
+    3.0.0-rc01
 owners
     Andrew Cherry, Ryan Riley
 authors

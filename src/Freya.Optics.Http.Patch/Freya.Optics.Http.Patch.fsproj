@@ -5,14 +5,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>63a4881e-8b31-48de-bdac-92164f6fe100</ProjectGuid>
+    <ProjectGuid>f7e37409-78a3-413e-91c4-31d3678c9b5e</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Freya.Optics.Http</RootNamespace>
-    <AssemblyName>Freya.Optics.Http</AssemblyName>
+    <RootNamespace>Freya.Optics.Http.Patch</RootNamespace>
+    <AssemblyName>Freya.Optics.Http.Patch</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Name>Freya.Optics.Http</Name>
+    <Name>Freya.Optics.Http.Patch</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,7 +22,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Debug\Freya.Optics.Http.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\Freya.Optics.Http.Patch.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -31,7 +31,7 @@
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Release\Freya.Optics.Http.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\Freya.Optics.Http.Patch.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
@@ -57,9 +57,7 @@
   </Target>
   -->
   <ItemGroup>
-    <Compile Include="Request.fs" />
     <Compile Include="Response.fs" />
-    <Compile Include="Obsolete.fs" />
     <None Include="paket.references" />
     <None Include="paket.template" />
   </ItemGroup>
@@ -71,6 +69,11 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
+    <ProjectReference Include="..\Freya.Optics.Http\Freya.Optics.Http.fsproj">
+      <Name>Freya.Optics.Http</Name>
+      <Project>{63a4881e-8b31-48de-bdac-92164f6fe100}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <ProjectReference Include="..\Freya.Optics\Freya.Optics.fsproj">
       <Name>Freya.Optics</Name>
       <Project>{e4bbf3d3-a03a-4111-a4c1-dd6837ed4f47}</Project>
@@ -154,6 +157,17 @@
       <ItemGroup>
         <Reference Include="Freya.Types.Http">
           <HintPath>..\..\packages\common\Freya.Types.Http\lib\net452\Freya.Types.Http.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Choose>
+    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.5.2' Or $(TargetFrameworkVersion) == 'v4.5.3' Or $(TargetFrameworkVersion) == 'v4.6' Or $(TargetFrameworkVersion) == 'v4.6.1' Or $(TargetFrameworkVersion) == 'v4.6.2' Or $(TargetFrameworkVersion) == 'v4.6.3')">
+      <ItemGroup>
+        <Reference Include="Freya.Types.Http.Patch">
+          <HintPath>..\..\packages\common\Freya.Types.Http.Patch\lib\net452\Freya.Types.Http.Patch.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>

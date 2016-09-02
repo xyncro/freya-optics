@@ -1,14 +1,14 @@
 ﻿type project
 id
-    Freya.Optics.Http
+    Freya.Optics.Http.Hopac
 title
-    Freya.Optics.Http
+    Freya.Optics.Http.Hopac
 description
-    Freya Optics for access to core HTTP properties of requests and responses
+    Freya Optics for access to core HTTP properties of requests and responses (Hopac implementation)
 tags
-    functional, web, f#, http, optics, aether, freya
+    functional, web, f#, http, optics, aether, freya, hopac
 version
-    4.0.0-b004
+    3.0.0-rc01
 owners
     Andrew Cherry, Ryan Riley
 authors

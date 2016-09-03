@@ -2,7 +2,7 @@
 
 ## Overview
 
-Freya Optics provides custom optics from the loosely-typed OWIN data structures to the strongly typed [Freya.Types](https://github.com/xyncro/freya-types) data structures, enabling a consistent and safe approach to working with request and response data.
+Freya Optics provides custom optics from the loosely-typed OWIN data structures to the strongly typed [Freya Types](https://github.com/xyncro/freya-types) data structures, enabling a consistent and safe approach to working with request and response data.
 
 ## Status
 

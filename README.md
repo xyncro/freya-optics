@@ -1,5 +1,13 @@
-# freya-optics
+# Freya Optics
 
-You probably want the current official Freya repositories and organization: https://github.com/freya-fs.
+## Overview
 
-As of version 3.0, Freya will be moving under the Xyncro organization (see https://github.com/freya-fs/freya/issues/149 for more). As part of that, the project will move to a more granular repository structure to enable different elements of the stack to move at different paces and offer different guarantees around stability, etc. This repository is part of that shift, and will be used for work on alpha/beta versions of Freya 3.0 leading up to the 3.0 release.
+Freya Optics provides custom optics from the loosely-typed OWIN data structures to the strongly typed [Freya.Types](https://github.com/xyncro/freya-types) data structures, enabling a consistent and safe approach to working with request and response data.
+
+## Status
+
+[![Build status](https://ci.appveyor.com/api/projects/status/v45r28ikuebn4qaw/branch/master?svg=true)](https://ci.appveyor.com/project/xyncro/freya-optics/branch/master)
+
+## See Also
+
+For more information see the [meta-repository for the Freya Web Stack](https://github.com/xyncro/freya), along with the main [freya.io](https://freya.io) site.

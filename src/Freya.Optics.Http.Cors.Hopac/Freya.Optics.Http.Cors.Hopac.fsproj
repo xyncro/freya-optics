@@ -49,32 +49,6 @@
     </Otherwise>
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
-  <ItemGroup>
-    <Compile Include="Request.fs" />
-    <Compile Include="Response.fs" />
-    <Compile Include="Obsolete.fs" />
-    <None Include="paket.references" />
-    <None Include="paket.template" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
-    <ProjectReference Include="..\Freya.Optics.Http.Hopac\Freya.Optics.Http.Hopac.fsproj">
-      <Name>Freya.Optics.Http.Hopac</Name>
-      <Project>{fb888e99-23f5-4402-b373-8e4ca6b779c5}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\Freya.Optics\Freya.Optics.fsproj">
-      <Name>Freya.Optics</Name>
-      <Project>{e4bbf3d3-a03a-4111-a4c1-dd6837ed4f47}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -219,4 +193,36 @@
       </ItemGroup>
     </When>
   </Choose>
+  <ItemGroup>
+    <Compile Include="..\Freya.Optics.Http.Cors\Request.fs">
+      <Link>Request.fs</Link>
+    </Compile>
+    <Compile Include="..\Freya.Optics.Http.Cors\Response.fs">
+      <Link>Response.fs</Link>
+    </Compile>
+    <Compile Include="..\Freya.Optics.Http.Cors\Obsolete.fs">
+      <Link>Obsolete.fs</Link>
+    </Compile>
+    <None Include="paket.references" />
+    <None Include="paket.template" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <ProjectReference Include="..\Freya.Optics.Http.Hopac\Freya.Optics.Http.Hopac.fsproj">
+      <Name>Freya.Optics.Http.Hopac</Name>
+      <Project>{fb888e99-23f5-4402-b373-8e4ca6b779c5}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Freya.Optics\Freya.Optics.fsproj">
+      <Name>Freya.Optics</Name>
+      <Project>{e4bbf3d3-a03a-4111-a4c1-dd6837ed4f47}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

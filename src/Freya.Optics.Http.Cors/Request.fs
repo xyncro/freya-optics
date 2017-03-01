@@ -25,7 +25,7 @@ module Request =
 
         let private value_ key (tryParse, format) =
                 Request.header_ key
-            >-> Option.mapEpimorphism (tryParse >> Option.ofChoice, format)
+            >-> Option.mapEpimorphism (tryParse >> Option.ofResult, format)
 
         /// A lens from State -> AccessControlRequestHeaders option, accessing
         /// the optional Access-Control-Request-Headers header.

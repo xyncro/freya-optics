@@ -94,7 +94,7 @@ module Request =
 
         let private value_ key (tryParse, format) =
                 header_ key
-            >-> Option.mapEpimorphism (tryParse >> Option.ofChoice, format)
+            >-> Option.mapEpimorphism (tryParse >> Option.ofResult, format)
 
         /// A lens from State -> Accept option, accessing the optional Accept
         /// header.

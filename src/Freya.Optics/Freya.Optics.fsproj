@@ -1,8 +1,8 @@
 <Project Sdk="FSharp.NET.Sdk;Microsoft.NET.Sdk">
-  <Import Project="..\Freya.Optics.Common.targets" />
   <PropertyGroup>
     <Description>Core utilities for Freya Optics</Description>
   </PropertyGroup>
+  <Import Project="..\Freya.Optics.Common.targets" />
   <ItemGroup>
     <Compile Include="Prelude.fs" />
   </ItemGroup>

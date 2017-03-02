@@ -1,9 +1,9 @@
 <Project Sdk="FSharp.NET.Sdk;Microsoft.NET.Sdk">
-  <Import Project="..\Freya.Optics.Common.targets" />
   <PropertyGroup>
     <Description>Freya Optics for access to core HTTP properties of requests and responses</Description>
-    <Tags>$(Tags);http</Tags>
+    <PackageTags>$(PackageTags);http</PackageTags>
   </PropertyGroup>
+  <Import Project="..\Freya.Optics.Common.targets" />
   <ItemGroup>
     <Compile Include="Request.fs" />
     <Compile Include="Response.fs" />

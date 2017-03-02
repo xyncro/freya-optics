@@ -1,9 +1,9 @@
 <Project Sdk="FSharp.NET.Sdk;Microsoft.NET.Sdk">
-  <Import Project="..\Freya.Optics.Common.targets" />
   <PropertyGroup>
     <Description>Freya Optics for access to CORS extension properties of requests and responses</Description>
-    <Tags>$(Tags);http;cors</Tags>
+    <PackageTags>$(PackageTags);http;cors</PackageTags>
   </PropertyGroup>
+  <Import Project="..\Freya.Optics.Common.targets" />
   <ItemGroup>
     <Compile Include="Request.fs" />
     <Compile Include="Response.fs" />

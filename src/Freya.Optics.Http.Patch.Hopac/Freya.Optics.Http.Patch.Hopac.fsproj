@@ -1,10 +1,10 @@
 <Project Sdk="FSharp.NET.Sdk;Microsoft.NET.Sdk">
-  <Import Project="..\Freya.Optics.Common.targets" />
   <PropertyGroup>
-    <Description>Freya Optics for access to Patch extension properties of requests and responses, powered by Hopac</Description>
-    <Tags>$(Tags);http;patch;hopac</Tags>
-    <DefineConstants>$(DefineConstants);HOPAC</DefineConstants>
+    <Description>Freya Optics for access to Patch extension properties of requests and responses</Description>
+    <PackageTags>$(PackageTags);http;patch</PackageTags>
+    <Hopac>true</Hopac>
   </PropertyGroup>
+  <Import Project="..\Freya.Optics.Common.targets" />
   <ItemGroup>
     <Compile Include="..\Freya.Optics.Http.Patch\Response.fs" />
   </ItemGroup>

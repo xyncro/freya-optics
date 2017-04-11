@@ -23,6 +23,12 @@ module Option =
         function | Choice1Of2 x -> Some x
                  | _ -> None
 
+    /// Returns the result if successful, otherwise None.
+
+    let ofResult =
+        function | Result.Ok x -> Some x
+                 | _ -> None
+
     /// A degenerate isomorphism from an 'a option to an 'a, where a non-Some
     /// value will result in a runtime error. This should only be used as part
     /// of optics where the form of the data can't be proven at compile time

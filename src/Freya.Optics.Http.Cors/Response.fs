@@ -25,7 +25,7 @@ module Response =
 
         let private value_ key (tryParse, format) =
                 Response.header_ key
-            >-> Option.mapEpimorphism (tryParse >> Option.ofChoice, format)
+            >-> Option.mapEpimorphism (tryParse >> Option.ofResult, format)
 
         /// A lens from State -> AccessControlAllowCredentials option,
         /// accessing the optional Access-Control-Allow-Credentials header.

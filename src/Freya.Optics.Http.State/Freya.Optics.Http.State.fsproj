@@ -1,0 +1,19 @@
+<Project Sdk="FSharp.NET.Sdk;Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Freya Optics for access to HTTP state/cookies extension properties of requests and responses</Description>
+    <PackageTags>$(PackageTags);http;cookies;state</PackageTags>
+  </PropertyGroup>
+  <Import Project="..\Freya.Optics.Common.targets" />
+  <ItemGroup>
+    <Compile Include="Request.fs" />
+    <Compile Include="Response.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Freya.Core" Version="[4.0.0-alpha-*,5)" />
+    <PackageReference Include="Freya.Types.Http.State" Version="[4.0.0-alpha-*,5)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Freya.Optics\Freya.Optics.fsproj" />
+    <ProjectReference Include="..\Freya.Optics.Http\Freya.Optics.Http.fsproj" />
+  </ItemGroup>
+</Project>

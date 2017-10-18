@@ -19,9 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freya.Optics.Http.Cors.Hopa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freya.Optics.Http.Hopac", "src\Freya.Optics.Http.Hopac\Freya.Optics.Http.Hopac.fsproj", "{AAB00E1E-8470-4980-9E02-38FB839E9404}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Freya.Optics.Http.State", "src\Freya.Optics.Http.State\Freya.Optics.Http.State.fsproj", "{744171A1-AF4F-4122-87F5-08C452525701}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freya.Optics.Http.State", "src\Freya.Optics.Http.State\Freya.Optics.Http.State.fsproj", "{744171A1-AF4F-4122-87F5-08C452525701}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Optics.Http.State.Hopac", "src\Freya.Optics.Http.State.Hopac\Freya.Optics.Http.State.Hopac.fsproj", "{478072CB-AE78-4F6A-8B0F-BCC228855689}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freya.Optics.Http.State.Hopac", "src\Freya.Optics.Http.State.Hopac\Freya.Optics.Http.State.Hopac.fsproj", "{478072CB-AE78-4F6A-8B0F-BCC228855689}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

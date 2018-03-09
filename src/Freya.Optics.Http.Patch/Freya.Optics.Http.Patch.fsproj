@@ -1,4 +1,4 @@
-<Project Sdk="FSharp.NET.Sdk;Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Description>Freya Optics for access to Patch extension properties of requests and responses</Description>
     <PackageTags>$(PackageTags);http;patch</PackageTags>

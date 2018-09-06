@@ -1,4 +1,4 @@
-<Project Sdk="FSharp.NET.Sdk;Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Description>Freya Optics for access to CORS extension properties of requests and responses</Description>
     <PackageTags>$(PackageTags);http;cors</PackageTags>

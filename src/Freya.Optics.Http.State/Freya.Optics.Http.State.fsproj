@@ -9,8 +9,8 @@
     <Compile Include="Response.fs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Freya.Core" Version="[4.0.0-alpha-*,5)" />
-    <PackageReference Include="Freya.Types.Http.State" Version="[4.0.0-alpha-*,5)" />
+    <PackageReference Include="Freya.Core" Version="[4.0.*,5)" />
+    <PackageReference Include="Freya.Types.Http.State" Version="[4.0.*,5)" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Freya.Optics\Freya.Optics.fsproj" />

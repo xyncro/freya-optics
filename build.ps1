@@ -19,6 +19,7 @@ if ($env:appveyor){
 dotnet build -c Release Freya.Optics.sln /p:Version=$version$versionSuffix
 dotnet pack --no-build -c Release src/Freya.Optics /p:Version=$version$versionSuffix -o $psscriptroot/bin
 dotnet pack --no-build -c Release src/Freya.Optics.Http /p:Version=$version$versionSuffix -o $psscriptroot/bin
+dotnet pack --no-build -c Release src/Freya.Optics.Http.Hopac /p:Version=$version$versionSuffix -o $psscriptroot/bin
 dotnet pack --no-build -c Release src/Freya.Optics.Http.Cors /p:Version=$version$versionSuffix -o $psscriptroot/bin
 dotnet pack --no-build -c Release src/Freya.Optics.Http.Cors.Hopac /p:Version=$version$versionSuffix -o $psscriptroot/bin
 dotnet pack --no-build -c Release src/Freya.Optics.Http.Patch /p:Version=$version$versionSuffix -o $psscriptroot/bin
